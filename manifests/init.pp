@@ -10,11 +10,11 @@ class centrifydc {
                 notify => Exec["adjoin"]
         }
         
-        # This is only executed once when the package is installed.
-        # It requires "adjoin -w -P -n [new machine name] -u [domain administrator account] sps.cuny.edu" from the
-        # puppetmaster to pre-create the machine's account. Do this at the same time you sign the puppet certificate.
-	#
-	# This requires the $domain variable.
+		# This is only executed once when the package is installed.
+		# It requires "adjoin -w -P -n [new machine name] -u [domain administrator account] sps.cuny.edu" from the
+		# puppetmaster to pre-create the machine's account. Do this at the same time you sign the puppet certificate.
+		#
+		# This requires the $domain variable.
         exec { "adjoin" :
                 path => "/usr/bin:/usr/sbin:/bin",
 		returns => 15,

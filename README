@@ -24,7 +24,7 @@ Instructions
   the puppet client
 
 * Pre-create the target machine in the domain
-  adjoin -w -P -u <username> your.domain.net
+  sudo adjoin -w -P -u <username> -n <new-hostname> your.domain.net
    
 
 Example Node Configurations
