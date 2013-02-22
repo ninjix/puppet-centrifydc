@@ -1,0 +1,18 @@
+#
+# Managed by Puppet DO NOT EDIT BY HAND
+#
+# Speed up lookups for common users who we know aren't in AD
+#
+# These values are controlled via group policy under 
+#   CentrifyDC Settings->Login Settings->Users to Ignore (Lookup)
+#
+# The syntax is
+#
+# user_name
+#
+<% default_user_ignore.each do |val| -%>
+<%= val %>
+<% end -%>
+<% user_ignore.each do |val| -%>
+<%= val %>
+<% end -%>

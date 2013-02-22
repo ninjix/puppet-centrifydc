@@ -1,0 +1,23 @@
+#
+# Managed by Puppet DO NOT EDIT BY HAND
+#
+# Allow a specific list of users and/or groups to log into this computer.
+#
+# These values are controlled via group policy under
+#      "Computer Configuration"
+#      -> "Centrify Settings"
+#         -> "DirectControl Settings"
+#            -> "Login Settings"
+#               -> "Manage login filters"
+#
+# The syntax is
+#
+# user_name
+#
+<% default_users_allow.each do |val| -%>
+<%= val %>
+<% end -%>
+<% users_allow.each do |val| -%>
+<%= val %>
+<% end -%>
+

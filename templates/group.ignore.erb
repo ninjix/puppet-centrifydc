@@ -1,0 +1,18 @@
+#
+# Managed by Puppet DO NOT EDIT BY HAND
+#
+# Speed up lookups for common groups who we know aren't in AD
+#
+# These values are controlled via group policy under 
+#   CentrifyDC Settings->Login Settings->Groups to Ignore (Lookup)
+#
+# The syntax is
+#
+# group_name
+#
+<% default_group_ignore.each do |val| -%>
+<%= val %>
+<% end -%>
+<% group_ignore.each do |val| -%>
+<%= val %>
+<% end -%>
