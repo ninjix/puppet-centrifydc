@@ -1,6 +1,6 @@
 # == Class: centrifydc::params
 #
-# This is a container class holding default parameters for for zabbix class.
+# This is a container class holding default parameters for for centrifydc class.
 #  currently, only the Ubuntu family is supported, but this can be easily
 #  extended by changing package names and configuration file paths.
 #
